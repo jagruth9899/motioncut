@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Car Rental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+        }
+
+        header::before {
+            background-image: url(https://wallpapercave.com/wp/wp12409968.jpg);
+             content: "";
+        position: absolute;
+     background-size: cover;
+        background-attachment: fixed; /* Added to make the background fixed */
+         width: 100%;
+         height: 100%;
+             z-index: -1;
+             top: 0;
+            left: 0;
+    opacity: 0.5;
+             }
+
+        .navigation {
+            font-size: 1.5rem;
+            display: flex;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+            font-size: 2rem;
+        }
+
+        section {
+            display: flex;
+    flex-direction: column;
+    margin: 20px 230px; /* Adjusted margin-top to move the text upward */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-family: 'Alkatra', cursive;
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #e3d1d1;
+            margin-bottom: 30px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            width: 300px;
+            padding: 20px;
+            margin: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: red;
+        }
+
+        .service-description {
+            font-size: 1.2rem;
+            color: #e3d1d1;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Our Rental Services</h1>
+        <p>Discover our comprehensive range of car rental services designed to make your travel experience seamless and enjoyable.</p>
+
+        <div class="services">
+            <div class="service-card">
+                <div class="service-title">Standard Vehicles</div>
+                <div class="service-description">Choose from our diverse fleet of standard vehicles, suitable for everyday travel needs with comfort and reliability.</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-title">Luxury Cars</div>
+                <div class="service-description">Indulge in the luxury experience with our premium selection of high-end cars, perfect for special occasions and events.</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-title">Airport Transfers</div>
+                <div class="service-description">Enjoy a hassle-free journey with our convenient airport transfer services, ensuring a smooth transition to and from the airport.</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-title">Flexible Rental Plans</div>
+                <div class="service-description">Opt for our flexible rental plans, whether it's a short-term getaway or an extended road trip, we've got you covered.</div>
+            </div>
+
+            
+
+        </div>
+    </section>
+</body>
+
+</html>
